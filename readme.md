@@ -41,3 +41,14 @@ require("./stock_picker.rb")
 > stock_picker([17,3,6,9,15,8,6,1,10])
   => [1,4]  # for a profit of $15 - $3 == $12
 ```
+
+### Project 3: Substrings
+
+Implement a method #substrings that takes a word as the first argument and then an array of valid substrings (your dictionary) as the second argument. It should return a hash listing each substring (case insensitive) that was found in the original string and how many times it was found.
+
+```ruby
+> dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
+=> ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
+> substring("below", dictionary)
+=> { "below" => 1, "low" => 1 }
+```
