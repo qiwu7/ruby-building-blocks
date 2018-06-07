@@ -52,3 +52,20 @@ Implement a method #substrings that takes a word as the first argument and then 
 > substring("below", dictionary)
 => { "below" => 1, "low" => 1 }
 ```
+
+### Project 4: Bubble Sort
+
+One of the simpler (but more processor-intensive) ways of sorting a group of items in an array is bubble sort, where each element is compared to the one next to it and they are swapped if the one on the left is larger than the one on the right. This continues until the array is eventually sorted.
+
+- Build a method #bubble_sort that takes an array and returns a sorted array.
+```ruby
+> bubble_sort([4,3,78,2,0,2])
+=> [0,2,2,3,4,78]
+```
+- Create a similar method called #bubble_sort_by which sorts an array by accepting a block.
+```ruby
+> bubble_sort_by(["hi","hello","hey"]) { |left,right| left.length - right.length }
+=> ["hi", "hey", "hello"]
+> bubble_sort_by([1,3,5,7,3,5,4,6,1]) { |left,right| left <=> right }
+=> [1, 1, 3, 3, 4, 5, 5, 6, 7]
+```
