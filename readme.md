@@ -41,8 +41,6 @@ require("./stock_picker.rb")
 > stock_picker([17,3,6,9,15,8,6,1,10])
   => [1,4]  # for a profit of $15 - $3 == $12
 ```
-<<<<<<< Updated upstream
-=======
 
 ### Project 3: Substrings
 
@@ -71,4 +69,3 @@ One of the simpler (but more processor-intensive) ways of sorting a group of ite
 > bubble_sort_by([1,3,5,7,3,5,4,6,1]) { |left,right| left <=> right }
 => [1, 1, 3, 3, 4, 5, 5, 6, 7]
 ```
->>>>>>> Stashed changes
